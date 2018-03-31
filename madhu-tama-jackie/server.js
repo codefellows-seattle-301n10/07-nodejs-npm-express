@@ -15,10 +15,16 @@ app.get('/new-article', (req,res) => {
   res.sendFile('new.html',{root: './public'});
 })
 //Posting the article to middleware
-app.post('/articles', express.urlencoded(), function(request, response) {
+app.post('/articles', express.urlencoded(), (request, response) => {
   // REVIEWED: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
   console.log(request.body);
   response.send('Record posted to server!!');
 })
+
+//404
+app.use((request, response) => {
+  response.sendFile('404.html', {root: './public'});
+});
+
 //Listen to port 3000
 app.listen(PORT, () => console.log('listening to port', PORT));
