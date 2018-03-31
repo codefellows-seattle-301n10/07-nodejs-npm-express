@@ -14,8 +14,8 @@ app.post('/articles', express.urlencoded(), (request, response) => {
   response.send('Record posted to server!!');
 });
 
-app.get('/new-page', (req, res) => {
-  res.sendFile('index.html', {root: './public'});
+app.get('/new-article', (req, res) => {
+  res.sendFile('new.html', {root: './public'});
 });
 
 app.use((req, res) => {
