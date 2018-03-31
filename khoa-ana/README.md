@@ -1,22 +1,23 @@
 # Project Name
+Lab 07 - nodeJS and npm express
+
 
 **Author**: Khoa and Ana
 **Version**: 1.0.0 
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+Create a blog website that utilizes the same template for all user stories created that uses a server
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+To start, grab starter code from lab 07, and use express.js to create a server
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+HTML, CSS, SMACSS, Handlebars, JavaScript, node.js, express.js
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+03/31/2018 9:30 AM - Created repository and added Ana as a collaborator.
+03/31/2018 10:12 AM - User stories completed.
+03/31/2018 3:25 PM - Completed README.md
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+Khoa Huynh and Ana Ortega
