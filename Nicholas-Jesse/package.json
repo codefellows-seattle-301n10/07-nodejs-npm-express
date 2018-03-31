@@ -1,0 +1,15 @@
+{
+  "name": "nicholas-jesse",
+  "version": "1.0.0",
+  "description": "**Author**: Nicholas Welch, Jesse Atay\r **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
