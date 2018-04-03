@@ -17,8 +17,11 @@ app.post('/articles', express.urlencoded({extended: true}), function(request, re
 app.listen(PORT, () => console.log('Listening on PORT' , PORT));
 
 app.get('/index', (request , response) => {
-  console.log("do you see me?");
   response.sendFile('index.html' , {root: './public'});
+});
+
+app.get('/new' , (request, response) => {
+  response.sendFile('new.html', {root: './public'});
 });
 
 app.use((request, response) => {
