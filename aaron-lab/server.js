@@ -2,6 +2,7 @@
 
 const express = require('express');
 const PORT = process.env.PORT || 3000;
+const app = express();
 
 // REVIEW: POST route needs to parse the body passed in with the request. express.urlencoded() attaches "middleware" to do that
 app.post('/articles', express.urlencoded(), function(request, response) {
@@ -9,3 +10,4 @@ app.post('/articles', express.urlencoded(), function(request, response) {
   console.log(request.body);
   response.send('Record posted to server!!');
 })
+app.listen(PORT);
