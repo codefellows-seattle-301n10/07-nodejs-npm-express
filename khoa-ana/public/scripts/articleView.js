@@ -74,8 +74,8 @@ articleView.setTeasers = () => {
   });
 };
 
-// COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
+// it is called in the new.html. It ultimately triggers when the page finishes loading all the html and scripts in the new.html page. when the function is evoked, .tab-content will be shown and #export-field will be hidden on the html. and then an event handler will be placed on the #article-json. When there is focus on #article-json, it will be selected.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,8 +87,8 @@ articleView.initNewArticlePage = () => {
   $('#new-form').on('submit', articleView.submit);
 };
 
-// COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When is this function called? What event ultimately triggers its execution?
+// this function is called when any input or textarea is changed in #new-form
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,8 +112,8 @@ articleView.create = () => {
   $('#article-json').val(`${JSON.stringify(article)},`);
 };
 
-// COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When is this function called? What event ultimately triggers its execution?
+// This one is called when the submit button is clicked/submitted.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,8 +125,8 @@ articleView.submit = event => {
     publishedOn: $('#article-published:checked').length ? new Date() : null
   });
 
-  // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // COMMENTED: Where is this function defined? When is this function called? What event ultimately triggers its execution?
+  // This function is defined in article.js This function is called in the submit function
   article.insertRecord();
 }
 
